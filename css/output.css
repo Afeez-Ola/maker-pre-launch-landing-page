@@ -18,6 +18,7 @@
     --color-Neutral-000: #FFFFFF;
     --color-Cyan-400: #3EE9E5;
     --color-Blue-800: #093F68;
+    --color-Blue-500: #6B8CA4;
   }
 }
 @layer base {
@@ -241,6 +242,9 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
@@ -252,6 +256,9 @@
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
+  }
+  .bg-Blue-500 {
+    background-color: var(--color-Blue-500);
   }
   .bg-Blue-800 {
     background-color: var(--color-Blue-800);
@@ -293,6 +300,12 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+  .text-Blue-500 {
+    color: var(--color-Blue-500);
+  }
+  .text-Blue-800 {
+    color: var(--color-Blue-800);
   }
   .text-Cyan-400 {
     color: var(--color-Cyan-400);
