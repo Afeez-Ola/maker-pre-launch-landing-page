@@ -191,11 +191,26 @@
   .w-full {
     width: 100%;
   }
+  .list-none {
+    list-style-type: none;
+  }
+  .list-image-\[url\(\)\] {
+    list-style-image: url();
+  }
+  .list-image-\[url\(\/assets\)\] {
+    list-style-image: url(/assets);
+  }
+  .list-image-\[url\(\/assets\/icon-check\.svg\)\] {
+    list-style-image: url(/assets/icon-check.svg);
+  }
   .flex-col {
     flex-direction: column;
   }
   .items-center {
     align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .justify-center {
     justify-content: center;
