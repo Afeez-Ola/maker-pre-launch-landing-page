@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @theme {
-  --font-display: "Satoshi", "sans-serif";
+  --font-display: "Manrope", sans-serif;
   --breakpoint-3xl: 120rem;
   --color-neutral-900: #080C20;
   --color-neutral-400: #777F98;
@@ -17,5 +17,6 @@
     font-size: 3rem;
     line-height: 1.5rem;
     letter-spacing: 0;
+    font-family: "Manrope", sans-serif;
   }
 }
