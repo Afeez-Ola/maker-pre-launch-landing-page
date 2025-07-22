@@ -1,1 +1,14 @@
 @import "tailwindcss";
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+  --breakpoint-3xl: 120rem;
+  --color-neutral-900: #080C20;
+  --color-neutral-400: #777F98;
+  --color-neutral-000: #FFFFFF;
+  --color-cyan-400: #3EE9E5;
+  --color-Red-400: #FF2965;
+  --color-Blue-800: #093F68;
+  --color-Blue-500: #6B8CA4;
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+}
