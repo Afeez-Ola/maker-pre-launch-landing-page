@@ -188,6 +188,9 @@
   .w-11\/12 {
     width: calc(11/12 * 100%);
   }
+  .w-full {
+    width: 100%;
+  }
   .flex-col {
     flex-direction: column;
   }
