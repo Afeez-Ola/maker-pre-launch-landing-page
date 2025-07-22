@@ -239,6 +239,12 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .pt-12 {
     padding-top: calc(var(--spacing) * 12);
   }
