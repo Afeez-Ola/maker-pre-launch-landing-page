@@ -9,6 +9,13 @@
   --color-Red-400: #FF2965;
   --color-Blue-800: #093F68;
   --color-Blue-500: #6B8CA4;
-  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
-  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+}
+
+
+@layer components {
+  .text-preset-1 {
+    font-size: 3rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+  }
 }

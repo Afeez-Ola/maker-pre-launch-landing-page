@@ -168,6 +168,13 @@
     outline-width: 1px;
   }
 }
+@layer components {
+  .text-preset-1 {
+    font-size: 3rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+  }
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
