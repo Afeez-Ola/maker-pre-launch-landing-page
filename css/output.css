@@ -253,6 +253,9 @@
   .bg-Blue-800 {
     background-color: var(--color-Blue-800);
   }
+  .bg-Cyan-400 {
+    background-color: var(--color-Cyan-400);
+  }
   .bg-Neutral-900 {
     background-color: var(--color-Neutral-900);
   }
@@ -296,6 +299,9 @@
   }
   .text-Neutral-400 {
     color: var(--color-Neutral-400);
+  }
+  .text-Neutral-900 {
+    color: var(--color-Neutral-900);
   }
   .outline {
     outline-style: var(--tw-outline-style);
