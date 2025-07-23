@@ -326,16 +326,31 @@
       padding-left: calc(var(--spacing) * 4);
     }
   }
+  .md\:ml-8 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * 8);
+    }
+  }
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:self-start {
+    @media (width >= 48rem) {
+      align-self: flex-start;
+    }
+  }
+  .md\:justify-self-start {
+    @media (width >= 48rem) {
+      justify-self: flex-start;
     }
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @layer components {
   .text-preset-1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 3.6rem;
     letter-spacing: 0;
     font-family: "Manrope", sans-serif;
@@ -381,12 +396,6 @@
     line-height: 1.2rem;
     letter-spacing: 0;
     font-family: "Manrope", sans-serif;
-  }
-  .bg-tablet {
-    background-image: url(/assets/illustration-hero-left.svg),url(/assets/illustration-hero-right.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: left center, right center;
-    background-size: auto, auto;
   }
 }
 @property --tw-font-weight {

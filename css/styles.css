@@ -16,7 +16,7 @@
 
 @layer components {
   .text-preset-1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 3.6rem;
     letter-spacing: 0;
     font-family: "Manrope", sans-serif;
@@ -63,11 +63,5 @@
     letter-spacing: 0;
     font-family: "Manrope", sans-serif;
   }
-  .bg-tablet{
-    background-image: url(/assets/illustration-hero-left.svg),url(/assets/illustration-hero-right.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: left center, right center;
-    background-size: auto, auto;
-  }
-
 }
+
