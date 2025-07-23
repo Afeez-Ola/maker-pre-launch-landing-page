@@ -282,6 +282,24 @@
   .bg-Neutral-900 {
     background-color: var(--color-Neutral-900);
   }
+  .bg-\[url\(\/assets\/\)\] {
+    background-image: url(/assets/);
+  }
+  .bg-\[url\(\/assets\/bg-footer-squiggle\.svg\)\] {
+    background-image: url(/assets/bg-footer-squiggle.svg);
+  }
+  .bg-contain {
+    background-size: contain;
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
