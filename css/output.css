@@ -288,6 +288,12 @@
   .bg-\[url\(\/assets\/bg-footer-squiggle\.svg\)\] {
     background-image: url(/assets/bg-footer-squiggle.svg);
   }
+  .bg-\[url\(\/assets\/illustration-hero-left\.svg\)\] {
+    background-image: url(/assets/illustration-hero-left.svg);
+  }
+  .bg-\[url\(\/assets\/illustration-hero-right\.svg\)\] {
+    background-image: url(/assets/illustration-hero-right.svg);
+  }
   .bg-contain {
     background-size: contain;
   }
