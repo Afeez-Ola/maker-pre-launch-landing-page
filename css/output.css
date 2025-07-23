@@ -370,6 +370,21 @@
       padding-left: calc(var(--spacing) * 4);
     }
   }
+  .max-sm\:block {
+    @media (width < 40rem) {
+      display: block;
+    }
+  }
+  .max-sm\:hidden {
+    @media (width < 40rem) {
+      display: none;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
 }
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @layer components {
