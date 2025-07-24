@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-green-500: oklch(72.3% 0.219 149.579);
     --spacing: 0.25rem;
     --font-weight-medium: 500;
     --font-weight-extrabold: 800;
@@ -344,6 +345,11 @@
   .md\:justify-self-start {
     @media (width >= 48rem) {
       justify-self: flex-start;
+    }
+  }
+  .md\:bg-green-500 {
+    @media (width >= 48rem) {
+      background-color: var(--color-green-500);
     }
   }
 }
