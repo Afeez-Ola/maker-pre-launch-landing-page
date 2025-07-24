@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -8,6 +9,10 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --spacing: 0.25rem;
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --font-weight-medium: 500;
     --font-weight-extrabold: 800;
     --radius-3xl: 1.5rem;
@@ -273,6 +278,9 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
@@ -331,9 +339,59 @@
       margin-left: calc(var(--spacing) * 8);
     }
   }
+  .md\:ml-12 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * 12);
+    }
+  }
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:w-8\/12 {
+    @media (width >= 48rem) {
+      width: calc(8/12 * 100%);
+    }
+  }
+  .md\:w-9\/12 {
+    @media (width >= 48rem) {
+      width: calc(9/12 * 100%);
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:items-start {
+    @media (width >= 48rem) {
+      align-items: flex-start;
+    }
+  }
+  .md\:justify-center {
+    @media (width >= 48rem) {
+      justify-content: center;
+    }
+  }
+  .md\:justify-start {
+    @media (width >= 48rem) {
+      justify-content: flex-start;
+    }
+  }
+  .md\:gap-4 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:gap-12 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 12);
+    }
+  }
+  .md\:gap-16 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 16);
     }
   }
   .md\:self-start {
@@ -346,8 +404,42 @@
       justify-self: flex-start;
     }
   }
+  .md\:text-left {
+    @media (width >= 48rem) {
+      text-align: left;
+    }
+  }
+  .md\:text-3xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .md\:text-5xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .md\:leading-\[1\.2\] {
+    @media (width >= 48rem) {
+      --tw-leading: 1.2;
+      line-height: 1.2;
+    }
+  }
+  .md\:leading-\[2\] {
+    @media (width >= 48rem) {
+      --tw-leading: 2;
+      line-height: 2;
+    }
+  }
+  .md\:leading-\[3\.6rem\] {
+    @media (width >= 48rem) {
+      --tw-leading: 3.6rem;
+      line-height: 3.6rem;
+    }
+  }
 }
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @layer components {
   .text-preset-1 {
     font-size: 3.5rem;
@@ -399,7 +491,7 @@
   }
 }
 @layer utilities {
-  .text-preset-1 {
+  .text-preset-one {
     font-size: 3.5rem;
     line-height: 3.6rem;
     letter-spacing: 0;
@@ -415,11 +507,16 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-font-weight: initial;
       --tw-outline-style: solid;
+      --tw-leading: initial;
     }
   }
 }
