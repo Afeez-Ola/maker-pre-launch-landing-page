@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-green-500: oklch(72.3% 0.219 149.579);
     --spacing: 0.25rem;
     --font-weight-medium: 500;
     --font-weight-extrabold: 800;
@@ -347,11 +346,6 @@
       justify-self: flex-start;
     }
   }
-  .md\:bg-green-500 {
-    @media (width >= 48rem) {
-      background-color: var(--color-green-500);
-    }
-  }
 }
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @layer components {
@@ -400,6 +394,14 @@
   .text-preset-7 {
     font-size: 0.75rem;
     line-height: 1.2rem;
+    letter-spacing: 0;
+    font-family: "Manrope", sans-serif;
+  }
+}
+@layer utilities {
+  .text-preset-1 {
+    font-size: 3.5rem;
+    line-height: 3.6rem;
     letter-spacing: 0;
     font-family: "Manrope", sans-serif;
   }

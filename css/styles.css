@@ -64,4 +64,12 @@
     font-family: "Manrope", sans-serif;
   }
 }
+@layer  utilities{
+  .text-preset-1 {
+    font-size: 3.5rem;
+    line-height: 3.6rem;
+    letter-spacing: 0;
+    font-family: "Manrope", sans-serif;
+  }
+  }
 
