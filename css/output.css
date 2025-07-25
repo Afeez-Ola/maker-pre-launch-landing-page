@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-green-400: oklch(79.2% 0.209 151.711);
     --spacing: 0.25rem;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
@@ -403,6 +404,9 @@
   .bg-Neutral-900 {
     background-color: var(--color-Neutral-900);
   }
+  .bg-green-400 {
+    background-color: var(--color-green-400);
+  }
   .bg-\[url\(\/assets\/bg-footer-squiggle\.svg\)\] {
     background-image: url(/assets/bg-footer-squiggle.svg);
   }
@@ -461,6 +465,9 @@
   }
   .text-Red-400 {
     color: var(--color-Red-400);
+  }
+  .text-green-400 {
+    color: var(--color-green-400);
   }
   .outline {
     outline-style: var(--tw-outline-style);
