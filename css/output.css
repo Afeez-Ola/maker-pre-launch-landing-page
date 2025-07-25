@@ -24,6 +24,7 @@
     --color-Neutral-400: #777F98;
     --color-Neutral-000: #FFFFFF;
     --color-Cyan-400: #3EE9E5;
+    --color-Red-400: #FF2965;
     --color-Blue-800: #093F68;
     --color-Blue-500: #6B8CA4;
   }
@@ -440,6 +441,9 @@
   .text-Neutral-900 {
     color: var(--color-Neutral-900);
   }
+  .text-Red-400 {
+    color: var(--color-Red-400);
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -509,6 +513,11 @@
   .max-sm\:hidden {
     @media (width < 40rem) {
       display: none;
+    }
+  }
+  .md\:mb-4 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 4);
     }
   }
   .md\:ml-8 {
@@ -616,6 +625,11 @@
   .md\:gap-30 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 30);
+    }
+  }
+  .md\:self-center {
+    @media (width >= 48rem) {
+      align-self: center;
     }
   }
   .md\:self-start {
