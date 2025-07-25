@@ -266,13 +266,17 @@
      Get notified when we launch
     </h2>
     <div class="flex w-10/12 flex-col md:flex-row justify-center gap-6 mb-16" id="form">
-     <input
+      <div>
+        <input
       class="bg-Blue-500 md:flex-2/3  text-Neutral-000 placeholder:text-preset-6 placeholder:pl-4 rounded-4xl py-4"
       type="email"
       name="email"
       id="email"
       placeholder="Email address" 
      />
+     <p class="errorMsg">Oops! That doesn’t look like an email address</p>
+      </div>
+     
      <button
       class="bg-Cyan-400 text-preset-6 md:flex-1/3 text-preset-6 font-extrabold hover:cursor-pointer border-2 hover:bg-Neutral-900 hover:text-Neutral-000 hover:border-Cyan-400 rounded-4xl py-4 text-Blue-800"
       type="submit" id="submitButton"
